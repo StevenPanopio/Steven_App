@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website with Embedded CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            /* Modified background to use gradient */
+            background-image: linear-gradient(to right, #f70000, #000000);
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center; /* Center the content */
+        }
+
+        .logo {
+            /* Centering the logo */
+            flex: 1; /* Distributes remaining space */
+            text-align: center; /* Center the content */
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            max-height: 50px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center; /* Center the content */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-image: linear-gradient(to right, #000000, #ff0000);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+            width: 150px; /* Set width */
+            height: 50px; /* Set height */
+            text-align: center;
+            line-height: 50px; /* Center the text vertically */
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <marquee><h1>HOLA</h1></marquee>
+       
+    </header>
+
+    <marquee>Steven Leonard Panopio</marquee>
+    <marquee direction="right" behavior="alternate"
+             style="border:BLACK 2px SOLID">
+       WMAD BSIT 3A
+    </marquee>
+        
+    <div class="content">
+        <div class="box">About Me</div>
+        <div class="box">Home</div>
+        <div class="box">Check this</div>
+        <div class="box">Shop</div>
+        <div class="box">Pictures</div>
+        <div class="box">Info</div>
+    </div>
+
+    <footer>
+        <p>&copy; PEW</p>
+    </footer>
+</body>
+</html>
